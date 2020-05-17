@@ -1,0 +1,47 @@
+body{
+    background-color: #00BCD4;
+    font: 14pt normal Arial;
+    color: #757575;
+}
+
+header{
+text-align: center;
+}
+
+#dados {
+    text-align: justify;
+    width: 500px;
+    background-color: #CDDC39;
+    color: #757575;
+    padding: 15px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+#resultado{
+    text-align: center;
+    width: 500px;
+    background-color: rgb(207, 216, 124);
+    padding: 15px;
+    margin: auto;
+    border-radius: 10px;
+}
+img{
+    margin: auto;
+    height: 250px;
+    width: 250px;
+    padding: 15px;
+    box-shadow: black;
+    border-radius: 50%;
+}
+
+footer{
+background-color: rgb(207, 216, 124);
+font: 12pt italic Arial;
+text-align: right;
+color: #75757535;
+width: 500px;
+padding: 15px;
+border-radius: 10px;
+margin: auto;
+}

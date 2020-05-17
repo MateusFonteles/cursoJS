@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de exercício</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+            <h1>
+                Conversor de Medidas
+            </h1>
+    </header>
+    <section>
+             <div id = "comp">
+                 <h2><p>Comprimento</p></h2>
+                 <h3><p>Quero converter:</p></h3>
+                <p><input type="number" id = "val" name="val"></p>
+                 <p><select name="cmed1" id="cmed1">
+                <option value="cm1" id="cm1">Centímetros (cm)</option>
+                <option value="m1" id="m1">Metro (m)</option>
+                <option value="km1" id="km1">Quilômetro (km)</option>
+                <option value="mi1" id="mi1">Milhas (mi)</option>
+                <option value="in1" id ="in1">Polegadas (in)</option>
+                <option value="ft1" id="ft1">Pé (ft)</option>
+                 </select></p>
+                 <p>Para:</p>
+                 <p><select name="cmed2" id="cmed2">
+                    <option value="cm2" id="cm2">Centímetros (cm)</option>
+                    <option value="m2" id="m2">Metro (m)</option>
+                    <option value="km2" id="km2">Quilômetro (km)</option>
+                    <option value="mi2" id="mi2">Milhas (mi)</option>
+                    <option value="in2" id ="in2">Polegadas (in)</option>
+                    <option value="ft2" id="ft2">Pé (ft)</option>
+                     </select></p>
+                     <input type="button" id="conv" value="Converter" onclick="converter()">
+             </div>
+             <div id="res">
+
+             </div>
+    </section>
+    <footer>
+        <p>&copy; MF</p>
+    </footer>
+        <script src="script.js"></script>
+</body>
+</html>

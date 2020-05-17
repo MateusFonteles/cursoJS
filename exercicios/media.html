@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de exercício</title>
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <header>
+            <h1>Média Aritimética</h1>
+    </header>
+    <section>
+        <div id="media">     
+
+            <p><h2>Insira os valores: </h2></p> 
+           
+            <p><input type="number" id="num"></p>
+            
+            <p><select name="tab" id="tabEsq" size = 5>
+                    <option>Divisor</option>
+            </select>
+            <select name="number" id="tabDir" size = 5>
+                <option>Dividendo</option>
+            </select>
+            </p>
+            
+            <p><input type="button" id="prox" value="Próximo" onclick="proximo()"> 
+                <input type="button" id="calc" value="calcular" onclick="calcular()">
+            </p>
+
+                <div id="res">
+                    
+                </div>
+
+            </div>
+   
+    </section>
+    <footer>
+        <p>&copy; CursoEmVídeo</p>
+    </footer>
+        <script src="media.js"></script>
+</body>
+</html>

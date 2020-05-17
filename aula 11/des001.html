@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasileiro ou estrangeiro</title>
+    <style>
+   body{
+            font: normal 18pt Arial;
+        }
+        input{
+            font: normal 18pt Arial;
+            width: 100px;
+        }
+        div#res{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Informe seu país de nascimento</h1>
+    <p>Eu nasci no/a
+    <input type="text" name = "txtpais" id = "txtpais"> </p>
+    <input type="button" value="Verificar" onclick="informar()">
+    <div name = "res" id="res">
+
+    </div>
+    <script>
+            function informar(){
+                var seupais = window.document.querySelector('input#txtpais')
+                var res = window.document.querySelector('div#res')
+                var pais = String(seupais.value)
+                pais = pais.toUpperCase()
+                res.innerHTML = (`<p>Seu país de nascimento é o/a ${pais}.`)
+                    if(pais == 'BRASIL'){
+                        res.innerHTML += (`<p> Você é <strong> Nacional </strong>.</p>`)
+                        res.innerHTML += (`<p> Dirija-se à fila da  <strong>esquerda</strong>.</p>`)
+                    }else if (pais == 'PARAGUAI' || pais == 'URUGUAI' || pais == 'VENEZUELA' || pais == 'BOLIVIA' || pais == 'CHILE'  || pais == 'COLOMBIA' || pais == 'EQUADOR' || pais ==  'GUIANA'|| pais == 'PERU' || pais ==  'SURINAME') {
+                        res.innerHTML += (`<p>Você é <strong>Estrangeiro do Mercosul</strong>.</p>`)
+                        res.innerHTML += (`<p> Dirija-se à fila do  <strong>meio</strong>.</p>`)
+                    }else{
+                        res.innerHTML += (`<p>Você é <strong>Estrangeiro</strong>.</p>`)
+                        res.innerHTML += (`<p> Dirija-se à fila da  <strong>direita</strong>.</p>`)
+                    }
+                    res.innerHTML += (`<p>Seja bem vindo/a ao Brasil!</p>`)
+            }
+
+    </script>
+</body>
+</html>

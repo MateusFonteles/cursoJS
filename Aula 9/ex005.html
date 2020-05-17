@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: blue;
+            color: antiquewhite;
+            font: normal 18px Arial;
+        }
+    </style>
+</head>
+<body>
+        <h1>Iniciando estudos com DOM</h1>
+        <p>Aqui vai o resultado</p>
+        <p>Aprendendo o usar DOM em <strong>JavaScript</strong></p>
+        <div id = "msg">Clique em mim</div>
+
+        <script>
+            var p1 = window.document.getElementsByTagName('p')[1]
+                            //o [0] que dizer que vai selecionar o primeiro objeto com tag p            
+            var corpo = window.document.body
+                //seleciona tag body com variável corpo
+            var d = document.getElementById ("msg") 
+                //é possível omitir o window.
+            var qs = window.document.querySelector('div#msg')
+                //utilizando o querySelector
+                //div#msg - sintáxe CSS
+                    //class = . , ID = #
+           // corpo.style.background = 'yellow'
+                //muda cor do body para amarelo
+            //window.document.write('Está escrito assim: ' + p1.innerText)
+                //mostra o texto que está no p selecionado
+                //Não puxa o <Strong>
+            //window.document.write('Está escrito assim: ' + p1.innerHTML)
+                 //PUXA O <STRONG>
+            //window.alert(p1.innerHTML)
+                    //chama p1 em alert
+            //p1.style.color = "black"
+                //muda a cor do elemento selecionado
+            //d.style.background = "green"
+                    //muda cor de background de d
+            //d.innerText = "estou aguardando..."
+                    //muda texto de d
+            //window.document.getElementById("msg").innerText = "olá"
+                    //em lugar de usar a variável, chama diretamente o elemento
+            qs.style.color = 'red'
+        </script>
+</body>
+</html>

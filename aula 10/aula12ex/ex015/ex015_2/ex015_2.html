@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+        <p>Preencha os campos abaixo para calcular sua idade</p>
+    </header>
+    
+
+    <div id= "dados">
+        <p> Ano de nascimento:
+            <input type="number" id="txtAno">
+        </p>
+
+        <p>
+            Sexo
+            <input type="radio" name="radiosex" id="radiosex" value="m" checked> Masculino
+            <input type="radio" name="radiosex" id="radiosex" value="f"> Feminino
+        </p>
+
+        <p><input type="button" name="verificar" id="verificar" value="Verificar" onclick="verificar()"></p>
+    </div>
+
+    <div id="resultado">
+
+    </div>
+    <footer>
+        &copy; Mateus Fonteles
+    </footer>
+   <script src="script.js"></script>
+</body>
+</html>

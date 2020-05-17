@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="tit">
+        <p><h1>Calculadora Vertical</h1></p>
+        <p>Preencha os valores e operações</p>
+    </div>
+    
+    <div id = "calculadora">
+        <p>
+        <input type="number" name="n1" id="n1">
+        <input type="button" id = "som" value="+" onclick="soma()">
+        <input type="button" id="sub" value="-" onclick="subtracao()">
+        <input type="button" id = "mult" value="*" onclick="multiplicacao()">
+        <input type="button" id = "div" value="/" onclick="divisao()">
+        <input type="number" id="n2">
+        <input type="button" id = "igual" value= "=" onclick="ig()"></p>
+        <div id = "res">
+      
+       </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

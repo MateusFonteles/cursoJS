@@ -1,0 +1,51 @@
+body{
+    background: #8BC34A;
+    font: 14px normal Arial;
+
+}
+
+#dLocal{
+    background:#757575;
+    padding: 10px;
+    border-radius: 15px;
+    font: 20px bold Arial;
+    color: #BDBDBD;
+    width: 80%;
+    margin: auto;
+
+}
+
+#dTexto{
+    background: #BDBDBD;
+    width: 80%;
+    padding: 10px;
+    border-radius: 15px 15px 0 0 ;
+    margin: auto;
+    text-align: center;
+}
+
+#dImg{
+    background: #BDBDBD;
+    width: 80%;
+    padding: 10px;
+    border-radius: 0 0 15px 15px;
+    margin: auto;
+    text-align: center;
+}
+
+#img{
+    width: 500px;
+    height: 500px;
+    border-radius: 25px;
+}
+
+footer{
+    background: #ffffff;
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+    text-align: right;
+    color: #75757550;
+}
+
