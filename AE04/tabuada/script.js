@@ -7,7 +7,7 @@ function tabuada(){
     let n = Number(num.value)
     let c = 1
     tab.innerHTML = ' '
-    //forma de limpar a tabela antes de solicitar novo valor
+    //forma de limpar a tabelaa  antes de solicitar novo valor
     while (c<= 10){
         let item = document.createElement('option')
         item.text = `${n} X ${c} = ${n*c}`
